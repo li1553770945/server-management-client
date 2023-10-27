@@ -1,0 +1,28 @@
+debug:
+  client:
+    interval_seconds: 60
+    name: test_server
+    base_dir: ./
+    white_list:
+      - root
+
+
+  server:
+    addr: http://localhost:8000
+    username: client
+    password: clientclient
+
+release:
+  client:
+    interval_seconds: 60
+    name: jh-gpu04
+    base_dir: /data/home
+    white_list:
+      - root
+      - docker
+
+  server:
+    addr: http://10.128.201.124:8000
+    username: client
+    password: clientclient
+
